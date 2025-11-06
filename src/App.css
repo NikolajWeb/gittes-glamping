@@ -20,3 +20,8 @@ h1, h2, h3, h4 {
 #root {
   text-align: center;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
