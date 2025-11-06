@@ -1,6 +1,7 @@
 import './App.css'
 import Pageheader from './components/pageHeader/PageHeader.jsx'
 import Review from './components/Review/review.jsx'
+import PageFooter from './components/pageFooter/PageFooter.jsx'
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
         <Review title={"Familiepakken"} name={"Benjamin, 42 år"} description={"Top karakter til Gittes Glamping herfra! Perfekt blanding af primitivt og luksuriøst. Og ungerne elskede det!"} />
         <Review title={"Weekendtur"} name={"Peter, 61 år"} description={"Jeg havde en rigtig hyggelig weekend, og maden er i særdeleshed en oplevelse værd. Min hustru synes kanoturen var rigtig idyllisk. Jeg er dog ikke så vild med at sejle."} />
       </div>
+
+      <PageFooter />
 
     </>
   )
