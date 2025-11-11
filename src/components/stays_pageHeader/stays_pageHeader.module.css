@@ -1,0 +1,23 @@
+.header {
+    background-image: url("C:/Users/morte/OneDrive/Skrivebord/Hovedforløb-node-js/gittes-glamping/src/assets/Gittes_Glamping_Assets/image_01.jpg");
+    background-blend-mode: hue;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 70vh;
+    font-size: 2.4rem;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.logo {
+    width: 50px;
+    position: absolute;
+    top: 15px; 
+    left: 15px;
+}
