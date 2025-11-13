@@ -65,3 +65,10 @@
   text-decoration: none;
   color: white;
 }
+
+.logo {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 50px;
+}
