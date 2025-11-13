@@ -21,3 +21,15 @@
     margin-bottom: 20px;
   }
 }
+
+.includes {
+  padding-bottom: 40px;
+}
+
+.price {
+  font-size: 1.7rem;
+}
+
+.includes {
+  line-height: 25px;
+}

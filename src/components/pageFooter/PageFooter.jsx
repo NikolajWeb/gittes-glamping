@@ -12,7 +12,7 @@ const PageFooter = () => {
             </div>
             <div className={styles.gittes}>
                 <img src={imageLogo} alt="" />
-                <p>Gittes Glamping</p>
+                <p>Gittes    Glamping</p>
             </div>
         </footer>
     );

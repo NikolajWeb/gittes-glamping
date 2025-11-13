@@ -1,6 +1,7 @@
 import InfoSection from "../components/infoSection/InfoSection";
 import PageHeader from "../components/pageHeader/PageHeader";
 import Reviews from "../components/reviews/Reviews";
+import PageFooter from "../components/pageFooter/PageFooter";
 import logo from "/logo.png";
 import bgImg from "../assets/Gittes_Glamping_Assets/image_00.jpg";
 import gitte from "../assets/Gittes_Glamping_Assets/gitte.jpg";
@@ -34,6 +35,7 @@ const Home = () => {
         vores wellnessaktiviteter.'
       />
       <Reviews />
+      <PageFooter />
     </article>
   );
 };
