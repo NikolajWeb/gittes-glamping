@@ -1,7 +1,6 @@
 import PageHeader from "../components/pageHeader/PageHeader";
 import bgImg from "../assets/Gittes_Glamping_Assets/image_01.jpg";
 import InfoSection from "../components/infoSection/InfoSection";
-import PageFooter from "../components/pageFooter/PageFooter";
 import StaysSection from "../components/staysSection/StaysSection";
 
 // Stays.jsx er parent/forældre komponenten, fordi den er ansvarlig for PageHeader/child/barns visning
@@ -15,7 +14,6 @@ const Stays = () => {
 Book dit ophold i dag og giv dig selv lov til at fordybe dig i naturen og nyde luksus i det fri. Vi ser frem tid at byde dig velkommen til en oplevelse fyldt med komfort, eventyr og skønhed.'
       />
       <StaysSection />
-      <PageFooter />
     </article>
   );
 };

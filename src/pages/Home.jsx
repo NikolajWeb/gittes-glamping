@@ -35,7 +35,6 @@ const Home = () => {
         vores wellnessaktiviteter.'
       />
       <Reviews />
-      <PageFooter />
     </article>
   );
 };

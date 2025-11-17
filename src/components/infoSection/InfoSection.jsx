@@ -1,8 +1,9 @@
 import Button from "../button/Button";
+import ContactForm from "../contactForm/ContactForm";
 import styles from "./infoSection.module.css";
 import { useNavigate } from "react-router";
 
-const InfoSection = ({ title, description, includes, button, img, detailPage, price }) => {
+const InfoSection = ({ title, description, includes, button, img, detailPage, price, form }) => {
   const navigate = useNavigate();
 
   return (
@@ -30,6 +31,8 @@ const InfoSection = ({ title, description, includes, button, img, detailPage, pr
           onClick={() => navigate("/stays")}
         />
       )}
+
+      {form && <ContactForm />}
     </section>
   );
 };

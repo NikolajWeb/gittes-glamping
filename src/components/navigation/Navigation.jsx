@@ -42,7 +42,22 @@ const Navigation = () => {
             className={({ isActive }) => (isActive ? styles.active : "")}
             onClick={() => setMenuOpen(false)}
           >
-            Ophold
+            Ophold <br />
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+            onClick={() => setMenuOpen(false)}
+          >
+            Kontakt <br />
+          </NavLink>
+
+          <NavLink
+            to="/activities"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+            onClick={() => setMenuOpen(false)}
+          >
+            Aktiviteter
           </NavLink>
         </li>
       </ul>
