@@ -1,21 +1,27 @@
-import { useState } from "react";
 import Button from "../button/Button";
 import styles from "./activity.module.css";
 import { FcLike, FcLikePlaceholder } from "react-icons/fc";
 import { useLocalStorage } from "@uidotdev/usehooks";
+import { useState } from "react";
 
 const Activity = ({ activity }) => {
   console.log(activity);
+  const [text, setText] = useState(false);
+
+  const handleRead = () => {
+    setText(!text);
+  };
+
+  console.log(text);
 
   const [liked, setLiked] = useLocalStorage("myList", []);
-
   const isLiked = liked.includes(activity._id);
 
   const handleLike = () => {
     setLiked((prevLike) =>
       isLiked
         ? prevLike.filter((li) => li !== activity._id)
-        : [...prevLike, activity._id]
+        : [...prevLike, activity]
     );
   };
 
@@ -36,7 +42,8 @@ const Activity = ({ activity }) => {
       </figcaption>
       <img src={activity.image} alt={activity.title} />
       <div>
-        <Button buttonText='Læs mere' />
+        <Button buttonText='Læs mere' onClick={handleRead} />
+        {text && <p className={styles.description}>{activity.description}</p>}
       </div>
     </figure>
   );
