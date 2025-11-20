@@ -23,6 +23,7 @@ const ActivitiesSection = () => {
 
   // Indbygget hook fra React der sørger for, at funktionen kun køre én gang når komponenten renderes/mountes.
   // Medmindre der tilføjes en afhængighed.
+  // useEffect kører kode, når komponenten loader, eller når noget ændrer sig (fx state eller props).
   useEffect(() => {
     fetchActivities();
   }, []);

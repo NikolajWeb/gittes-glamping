@@ -5,14 +5,17 @@ import burgerIcon from "/src/assets/burger_icon.svg";
 import logo from "/logo.png";
 
 const Navigation = () => {
+  // Holder styr på om menuen er åben. useState bruges til at gemme og ændre data inde i et komponent og når state ændrer sig, re-renderer komponenten automatisk.
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Skifter mellem at åbne og lukke menuen
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
   return (
     <nav>
+      {/* Viser logoet, skjules på forsiden */}
       <img
         src={logo}
         alt="Logo"
@@ -20,16 +23,18 @@ const Navigation = () => {
           location.pathname === "/" ? styles.hidden : ""
         }`}
       />
-      {/* Burger icon */}
+
+      {/* Burger-ikon til mobilmenu */}
       <div className={styles.burger} onClick={toggleMenu}>
         <img src={burgerIcon} alt="Menu" />
       </div>
 
-      {/* Navigation links */}
+      {/* Navigationslinks */}
       <ul
         className={`${styles.navLinks} ${menuOpen ? styles.navLinksActive : ""}`}
       >
         <li>
+          {/* Hvert link lukker menuen igen ved klik */}
           <NavLink
             to="/"
             className={({ isActive }) => (isActive ? styles.active : "")}
@@ -51,7 +56,6 @@ const Navigation = () => {
           >
             Kontakt <br />
           </NavLink>
-
           <NavLink
             to="/activities"
             className={({ isActive }) => (isActive ? styles.active : "")}
