@@ -8,6 +8,7 @@ import PageFooter from "./components/pageFooter/PageFooter";
 import Contact from "./pages/Contact";
 import { ToastContainer } from "react-toastify";
 import Activities from "./pages/Activities";
+import MyList from "./pages/MyList";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     { path: "/stays/:id", element: <StayDetails /> },
     { path: "/contact/", element: <Contact /> },
     { path: "/activities", element: <Activities /> },
+    { path: "/mylist", element: <MyList /> },
   ]);
 
   return (

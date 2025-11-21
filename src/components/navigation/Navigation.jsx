@@ -61,7 +61,14 @@ const Navigation = () => {
             className={({ isActive }) => (isActive ? styles.active : "")}
             onClick={() => setMenuOpen(false)}
           >
-            Aktiviteter
+            Aktiviteter <br />
+          </NavLink>
+          <NavLink
+            to="/mylist"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+            onClick={() => setMenuOpen(false)}
+          >
+            Min liste
           </NavLink>
         </li>
       </ul>

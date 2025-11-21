@@ -5,7 +5,6 @@ import { FcLike, FcLikePlaceholder } from "react-icons/fc";
 import { useLocalStorage } from "@uidotdev/usehooks";
 
 const Activity = ({ activity }) => {
-  console.log(activity);
 
   // useLocalStorage gemmer data i browserens localStorage, så det ikke forsvinder når siden genindlæses.
   const [liked, setLiked] = useLocalStorage("myList", []);
